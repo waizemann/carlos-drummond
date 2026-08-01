@@ -1,0 +1,2645 @@
+@import url(
+"https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+);
+
+:root {
+    --preto: #171412;
+    --marrom: #49382c;
+    --bege: #ede4d6;
+    --creme: #f8f4ec;
+    --dourado: #b68b58;
+    --branco: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--creme);
+
+    color: var(--preto);
+
+    font-family:
+        "Inter",
+        Arial,
+        sans-serif;
+
+    line-height: 1.8;
+}
+
+.cabecalho {
+    min-height: 92vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 80px 20px;
+
+    text-align: center;
+
+    color: var(--branco);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(18, 14, 11, 0.96),
+            rgba(72, 50, 35, 0.92)
+        );
+}
+
+.cabecalho-conteudo {
+    width: 100%;
+    max-width: 900px;
+}
+
+.subtitulo {
+    color: #d8b78e;
+
+    letter-spacing: 5px;
+
+    text-transform: uppercase;
+
+    font-size: 13px;
+
+    margin-bottom: 20px;
+}
+
+.cabecalho h1 {
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size:
+        clamp(
+            52px,
+            9vw,
+            110px
+        );
+
+    line-height: 1.05;
+
+    margin-bottom: 25px;
+}
+
+.introducao {
+    max-width: 650px;
+
+    margin:
+        0 auto 35px;
+
+    color: #e5ddd4;
+
+    font-size: 20px;
+}
+
+.botao {
+    display: inline-block;
+
+    padding:
+        15px 30px;
+
+    border:
+        1px solid
+        #d8b78e;
+
+    color: var(--branco);
+
+    text-decoration: none;
+
+    border-radius: 50px;
+
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background: #d8b78e;
+
+    color: var(--preto);
+
+    transform:
+        translateY(-4px);
+}
+
+.menu {
+    position: sticky;
+
+    top: 0;
+
+    z-index: 100;
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 5px;
+
+    padding: 14px;
+
+    background:
+        rgba(
+            23,
+            20,
+            18,
+            0.97
+        );
+        backdrop-filter: blur(12px);
+box-shadow: 0 5px 20px rgba(0,0,0,.25);
+}
+
+.menu a {
+    padding:
+        8px 13px;
+
+    color: #eee6dc;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    transition: 0.2s;
+}
+
+.menu a:hover {
+    color: #d8b78e;
+}
+
+main {
+    width: 92%;
+
+    max-width: 1150px;
+
+    margin: auto;
+}
+
+.secao {
+    margin: 50px 0;
+
+    padding:
+        60px
+        clamp(
+            20px,
+            6vw,
+            70px
+        );
+
+    background:
+        var(--branco);
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 15px 45px
+        rgba(
+            30,
+            20,
+            10,
+            0.08
+        );
+}
+
+.numero {
+    color:
+        var(--dourado);
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size:
+        clamp(
+            35px,
+            5vw,
+            55px
+        );
+
+    line-height: 1.1;
+
+    margin-bottom: 30px;
+
+    color:
+        var(--marrom);
+}
+
+.texto {
+    max-width: 850px;
+}
+
+.texto p {
+    margin-bottom: 22px;
+
+    font-size: 17px;
+}
+
+.fundo-escuro {
+    color:
+        #e9e1d8;
+
+    background:
+        var(--preto);
+}
+
+.fundo-escuro h2 {
+    color:
+        #ffffff;
+}
+
+.cartoes {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            3,
+            1fr
+        );
+
+    gap: 20px;
+}
+
+.cartao {
+    padding: 30px;
+
+    border:
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            0.12
+        );
+
+    border-radius: 15px;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.04
+        );
+}
+
+.cartao span {
+    color:
+        #d8b78e;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+}
+
+.cartao h3 {
+    margin:
+        15px 0 10px;
+
+    color:
+        #ffffff;
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 25px;
+
+    line-height: 1.2;
+}
+
+.linha {
+    border-left:
+        3px solid
+        var(--dourado);
+
+    padding-left: 30px;
+}
+
+.evento {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns:
+        100px 1fr;
+
+    gap: 20px;
+
+    padding-bottom: 35px;
+}
+
+.evento::before {
+    content: "";
+
+    position: absolute;
+
+    width: 15px;
+    height: 15px;
+
+    left: -39px;
+    top: 6px;
+
+    border-radius: 50%;
+
+    background:
+        var(--dourado);
+}
+
+.ano {
+    color:
+        var(--dourado);
+
+    font-weight: 700;
+
+    font-size: 22px;
+}
+
+.evento h3 {
+    font-size: 22px;
+
+    margin-bottom: 5px;
+}
+
+.texto-central {
+    max-width: 800px;
+
+    margin-bottom: 30px;
+
+    font-size: 17px;
+}
+
+.obras {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            2,
+            1fr
+        );
+
+    gap: 15px;
+}
+
+.obras div {
+    display: flex;
+
+    gap: 20px;
+
+    padding: 20px;
+
+    border:
+        1px solid
+        #e4d8c9;
+
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+.obras div:hover {
+    transform:
+        translateY(-4px);
+
+    border-color:
+        var(--dourado);
+
+    box-shadow:
+        0 8px 25px
+        rgba(
+            50,
+            30,
+            10,
+            0.1
+        );
+}
+
+.obras strong {
+    color:
+        var(--dourado);
+}
+
+.poemas {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            2,
+            1fr
+        );
+
+    gap: 20px;
+}
+
+.poemas article {
+    padding: 28px;
+
+    border-radius: 14px;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.06
+        );
+
+    border:
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            0.1
+        );
+}
+
+.poemas h3 {
+    color:
+        #ffffff;
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 26px;
+
+    margin-bottom: 12px;
+}
+
+.poemas span {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    color:
+        #d8b78e;
+
+    font-size: 13px;
+}
+
+.glossario {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            2,
+            1fr
+        );
+
+    gap: 15px;
+}
+
+.palavra {
+    padding: 22px;
+
+    border:
+        1px solid
+        #e4d8c9;
+
+    border-radius: 12px;
+
+    background:
+        #faf7f2;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.palavra:hover {
+    border-color:
+        var(--dourado);
+
+    transform:
+        translateY(-3px);
+}
+
+.palavra span {
+    display: block;
+
+    color:
+        var(--marrom);
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 24px;
+}
+
+.palavra small {
+    display: block;
+
+    margin-top: 8px;
+
+    color:
+        #51483f;
+
+    font-size: 14px;
+}
+
+.curiosidades {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            2,
+            1fr
+        );
+
+    gap: 20px;
+}
+
+.curiosidades article {
+    display: flex;
+
+    gap: 20px;
+
+    padding: 25px;
+
+    background:
+        #f5efe6;
+
+    border-radius: 14px;
+}
+
+.curiosidades span {
+    color:
+        var(--dourado);
+
+    font-size: 25px;
+
+    font-weight: 700;
+}
+
+.conclusao {
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #5c4432,
+            #241d18
+        );
+
+    color:
+        #eee5da;
+}
+
+.conclusao h2 {
+    color:
+        #ffffff;
+}
+
+.conclusao p {
+    max-width: 850px;
+
+    margin: auto;
+
+    font-size: 18px;
+}
+
+.fontes ul {
+    padding-left: 25px;
+}
+
+.fontes li {
+    margin-bottom: 12px;
+}
+
+footer {
+    padding:
+        60px 20px;
+
+    text-align: center;
+
+    color:
+        #d9d0c5;
+
+    background:
+        #171412;
+}
+
+footer h2 {
+    color:
+        #ffffff;
+
+    margin-bottom: 12px;
+}
+
+footer p {
+    margin-top: 8px;
+}
+
+#voltarTopo {
+    position: fixed;
+
+    right: 25px;
+    bottom: 25px;
+
+    width: 48px;
+    height: 48px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background:
+        var(--dourado);
+
+    color:
+        #ffffff;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    transition: 0.3s;
+}
+
+#voltarTopo.mostrar {
+    opacity: 1;
+
+    pointer-events: auto;
+}
+
+@media (
+    max-width: 800px
+) {
+
+    .cartoes,
+    .obras,
+    .poemas,
+    .glossario,
+    .curiosidades {
+        grid-template-columns:
+            1fr;
+    }
+
+    .evento {
+        grid-template-columns:
+            1fr;
+
+        gap: 5px;
+    }
+
+    .cabecalho {
+        min-height: 80vh;
+    }
+
+    .menu {
+        position: static;
+    }
+
+}
+.obra {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 6px;
+
+    width: 100%;
+
+    padding: 22px;
+
+    border:
+        1px solid
+        #e4d8c9;
+
+    border-radius: 10px;
+
+    background:
+        #ffffff;
+
+    color:
+        #171412;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.obra:hover {
+    transform:
+        translateY(-5px);
+
+    border-color:
+        #b68b58;
+
+    box-shadow:
+        0 12px 30px
+        rgba(
+            50,
+            30,
+            10,
+            0.12
+        );
+}
+
+.obra strong {
+    color:
+        #b68b58;
+
+    font-size: 14px;
+}
+
+.obra span {
+    color:
+        #49382c;
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 23px;
+}
+
+.obra small {
+    color:
+        #75695f;
+
+    margin-top: 5px;
+}
+
+.modal {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 1000;
+
+    display: none;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 20px;
+
+    background:
+        rgba(
+            0,
+            0,
+            0,
+            0.75
+        );
+}
+
+.modal.ativo {
+    display: flex;
+}
+
+.modal-caixa {
+    position: relative;
+
+    width: 100%;
+
+    max-width: 800px;
+
+    max-height: 88vh;
+
+    overflow-y: auto;
+
+    padding:
+        50px
+        clamp(
+            25px,
+            6vw,
+            65px
+        );
+
+    border-radius: 20px;
+
+    background:
+        #ffffff;
+
+    animation:
+        aparecer
+        0.3s
+        ease;
+}
+
+@keyframes aparecer {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            scale(0.92)
+            translateY(20px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            scale(1)
+            translateY(0);
+
+    }
+
+}
+
+.fechar {
+    position: absolute;
+
+    top: 15px;
+
+    right: 20px;
+
+    width: 42px;
+
+    height: 42px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background:
+        #eee5da;
+
+    color:
+        #49382c;
+
+    font-size: 30px;
+
+    cursor: pointer;
+}
+
+.modal-ano {
+    color:
+        #b68b58;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+.modal-caixa h2 {
+    margin:
+        5px 0 25px;
+
+    color:
+        #49382c;
+}
+
+.modal-conteudo h3 {
+    margin:
+        25px 0 8px;
+
+    color:
+        #49382c;
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 24px;
+}
+
+.modal-conteudo p {
+    margin-bottom: 18px;
+
+    color:
+        #3f3833;
+}
+.glossario-principal {
+    text-align: center;
+}
+
+.glossario-principal
+.texto-central {
+    margin:
+        0 auto 30px;
+}
+
+.botao-glossario {
+    padding:
+        18px 32px;
+
+    border:
+        2px solid
+        #b68b58;
+
+    border-radius: 50px;
+
+    background:
+        #49382c;
+
+    color:
+        #ffffff;
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.botao-glossario:hover {
+    transform:
+        translateY(-5px);
+
+    background:
+        #b68b58;
+
+    box-shadow:
+        0 12px 25px
+        rgba(
+            80,
+            50,
+            25,
+            0.2
+        );
+}
+
+.modal-glossario {
+    max-width: 1000px;
+}
+
+.introducao-glossario {
+    margin-bottom: 25px;
+
+    color:
+        #665b52;
+}
+
+.lista-palavras {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            2,
+            minmax(
+                0,
+                1fr
+            )
+        );
+
+    gap: 22px;
+
+    padding:
+        10px 5px 30px;
+}
+
+
+.item-glossario {
+    min-height: 230px;
+
+    padding:
+        30px;
+
+    border:
+        2px solid
+        #e1d3c2;
+
+    border-radius: 16px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f7f1e9
+        );
+
+    box-shadow:
+        0 8px 22px
+        rgba(
+            60,
+            40,
+            20,
+            0.08
+        );
+
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s,
+        border-color 0.3s;
+}
+
+
+.item-glossario:hover {
+    transform:
+        translateY(-7px);
+
+    border-color:
+        #b68b58;
+
+    box-shadow:
+        0 15px 35px
+        rgba(
+            60,
+            40,
+            20,
+            0.16
+        );
+}
+
+
+.item-glossario h3 {
+    margin:
+        0 0 16px;
+
+    color:
+        #49382c;
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size:
+        clamp(
+            24px,
+            3vw,
+            31px
+        );
+
+    border-bottom:
+        2px solid
+        #d6b88e;
+
+    padding-bottom:
+        10px;
+}
+
+
+.item-glossario p {
+    margin: 0;
+
+    color:
+        #4f4740;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+
+.modal-glossario {
+    width: 96%;
+
+    max-width: 1250px;
+
+    max-height: 92vh;
+
+    padding:
+        55px
+        clamp(
+            25px,
+            5vw,
+            75px
+        );
+}
+
+
+@media (
+    max-width: 800px
+) {
+
+    .lista-palavras {
+        grid-template-columns:
+            1fr;
+    }
+
+    .item-glossario {
+        min-height: auto;
+
+        padding: 24px;
+    }
+
+}
+.poema-principal {
+    background:
+        linear-gradient(
+            135deg,
+            #49382c,
+            #241b16
+        );
+
+    color:
+        #ffffff;
+}
+
+
+.poema-principal h2 {
+    color:
+        #ffffff;
+
+    font-size:
+        clamp(
+            40px,
+            6vw,
+            75px
+        );
+}
+
+
+.poema-principal
+.numero {
+    color:
+        #d8ad76;
+}
+
+
+.destaque-poema {
+    display: grid;
+
+    grid-template-columns:
+        1.4fr 0.8fr;
+
+    gap: 50px;
+
+    align-items: center;
+
+    margin-top: 30px;
+}
+
+
+.poema-ano {
+    color:
+        #d8ad76;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+
+.poema-descricao {
+    max-width: 650px;
+
+    color:
+        #e6ddd4;
+
+    font-size: 20px;
+
+    line-height: 1.8;
+}
+
+
+.poema-informacoes {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            3,
+            1fr
+        );
+
+    gap: 15px;
+
+    margin:
+        35px 0;
+}
+
+
+.poema-informacoes div {
+    padding: 18px;
+
+    border:
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            0.18
+        );
+
+    border-radius: 12px;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.07
+        );
+}
+
+
+.poema-informacoes strong {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color:
+        #d8ad76;
+}
+
+
+.poema-informacoes span {
+    color:
+        #ffffff;
+
+    line-height: 1.5;
+}
+
+
+.botao-poema {
+    padding:
+        18px 30px;
+
+    border: none;
+
+    border-radius: 50px;
+
+    background:
+        #d8ad76;
+
+    color:
+        #2c211a;
+
+    font-size: 17px;
+
+    font-weight: 800;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.botao-poema:hover {
+    transform:
+        translateY(-5px);
+
+    box-shadow:
+        0 15px 30px
+        rgba(
+            0,
+            0,
+            0,
+            0.3
+        );
+}
+
+
+.poema-frase {
+    padding: 45px 35px;
+
+    border:
+        1px solid
+        rgba(
+            216,
+            173,
+            118,
+            0.5
+        );
+
+    border-radius: 20px;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.07
+        );
+}
+
+
+.poema-frase span {
+    display: block;
+
+    color:
+        #f1c994;
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 32px;
+
+    line-height: 1.4;
+}
+
+
+.poema-frase p {
+    margin-top: 25px;
+
+    color:
+        #ddd3ca;
+
+    line-height: 1.8;
+}
+
+
+.modal-poema {
+    max-width: 900px;
+}
+
+
+.subtitulo-poema {
+    margin-bottom: 25px;
+
+    color:
+        #75685e;
+}
+
+
+.aviso-poema {
+    padding: 22px;
+
+    border-left:
+        5px solid
+        #b68b58;
+
+    border-radius: 8px;
+
+    background:
+        #f5eee5;
+}
+
+
+.aviso-poema p {
+    margin:
+        8px 0 0;
+}
+
+
+.analise-poema h3 {
+    margin-top: 40px;
+}
+
+
+.analise-poema p {
+    color:
+        #4c443e;
+
+    font-size: 17px;
+
+    line-height: 1.9;
+}
+
+
+@media (
+    max-width: 850px
+) {
+
+    .destaque-poema {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .poema-informacoes {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .poema-frase {
+        padding: 30px;
+    }
+
+}
+/* ==================================
+   CORREÇÃO DO POEMA EM DESTAQUE
+================================== */
+
+.poema-principal {
+    width: 100%;
+    overflow: hidden;
+    padding: 90px 7%;
+}
+
+.destaque-poema {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.5fr)
+        minmax(280px, 0.7fr);
+
+    gap: 40px;
+
+    width: 100%;
+
+    max-width: 1250px;
+
+    margin:
+        35px auto 0;
+
+    align-items: center;
+}
+
+
+/* Impede que o texto ultrapasse */
+.poema-texto {
+    min-width: 0;
+}
+
+
+.poema-principal h2 {
+    font-size:
+        clamp(
+            42px,
+            4.5vw,
+            68px
+        );
+
+    line-height: 1.05;
+
+    overflow-wrap:
+        break-word;
+}
+
+
+.poema-descricao {
+    max-width: 650px;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+}
+
+
+/* Caixas de informação */
+.poema-informacoes {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            3,
+            minmax(0, 1fr)
+        );
+
+    gap: 12px;
+
+    width: 100%;
+
+    margin:
+        30px 0;
+}
+
+
+.poema-informacoes div {
+    min-width: 0;
+
+    min-height: 185px;
+
+    padding: 20px 16px;
+
+    overflow: hidden;
+
+    border:
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            0.18
+        );
+
+    border-radius: 12px;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.06
+        );
+}
+
+
+.poema-informacoes strong {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color:
+        #d8ad76;
+
+    font-size: 19px;
+}
+
+
+.poema-informacoes span {
+    display: block;
+
+    color:
+        #ffffff;
+
+    font-size: 16px;
+
+    line-height: 1.55;
+
+    overflow-wrap:
+        break-word;
+}
+
+
+/* Caixa da frase */
+.poema-frase {
+    width: 100%;
+
+    min-width: 0;
+
+    padding: 35px 28px;
+
+    box-sizing:
+        border-box;
+
+    border:
+        1px solid
+        rgba(
+            216,
+            173,
+            118,
+            0.45
+        );
+
+    border-radius: 20px;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.07
+        );
+}
+
+
+.poema-frase span {
+    display: block;
+
+    color:
+        #f1c994;
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size:
+        clamp(
+            25px,
+            2.2vw,
+            36px
+        );
+
+    line-height: 1.3;
+
+    overflow-wrap:
+        break-word;
+}
+
+
+.poema-frase p {
+    margin-top: 20px;
+
+    color:
+        #ddd3ca;
+
+    font-size: 16px;
+
+    line-height: 1.75;
+
+    overflow-wrap:
+        break-word;
+}
+
+
+/* Botão */
+.botao-poema {
+    padding:
+        16px 28px;
+
+    font-size: 15px;
+}
+
+
+/* TABLET */
+@media (
+    max-width: 1050px
+) {
+
+    .destaque-poema {
+        grid-template-columns:
+            1fr;
+    }
+
+    .poema-frase {
+        max-width: 700px;
+    }
+
+}
+
+
+/* CELULAR */
+@media (
+    max-width: 700px
+) {
+
+    .poema-principal {
+        padding:
+            65px 20px;
+    }
+
+    .poema-informacoes {
+        grid-template-columns:
+            1fr;
+    }
+
+    .poema-informacoes div {
+        min-height: auto;
+    }
+
+    .poema-principal h2 {
+        font-size: 42px;
+    }
+
+    .poema-frase {
+        padding: 28px 22px;
+    }
+
+}
+/* =====================================
+   CORREÇÃO DO MODAL DO POEMA
+===================================== */
+
+#modalPoema .modal-caixa {
+    width: min(900px, 92vw);
+    max-height: 88vh;
+
+    padding: 40px;
+
+    box-sizing: border-box;
+
+    overflow-y: auto;
+}
+
+
+/* Título do poema */
+#modalPoema h2 {
+    margin: 10px 0 12px;
+
+    font-size: 48px !important;
+
+    line-height: 1.1 !important;
+}
+
+
+/* Texto abaixo do título */
+#modalPoema .subtitulo-poema {
+    margin-bottom: 25px;
+
+    font-size: 17px !important;
+
+    line-height: 1.6 !important;
+}
+
+
+/* Caixa "Sobre o poema" */
+#modalPoema .aviso-poema {
+    padding: 20px 24px;
+
+    margin-bottom: 30px;
+
+    box-sizing: border-box;
+}
+
+
+#modalPoema .aviso-poema strong {
+    font-size: 25px !important;
+}
+
+
+#modalPoema .aviso-poema p {
+    margin-top: 8px;
+
+    font-size: 17px !important;
+
+    line-height: 1.7 !important;
+}
+
+
+/* Títulos da análise */
+#modalPoema .analise-poema h3 {
+    margin-top: 35px;
+
+    font-size: 27px !important;
+
+    line-height: 1.25 !important;
+}
+
+
+/* Textos da análise */
+#modalPoema .analise-poema p {
+    margin: 12px 0;
+
+    font-size: 17px !important;
+
+    line-height: 1.8 !important;
+}
+
+
+/* Texto "Carlos Drummond de Andrade" */
+#modalPoema .modal-ano {
+    font-size: 13px !important;
+
+    letter-spacing: 2px;
+}
+
+
+/* Botão de fechar */
+#modalPoema .fechar {
+    width: 42px;
+    height: 42px;
+
+    font-size: 28px !important;
+}
+
+
+/* Ajuste para celular */
+@media (max-width: 700px) {
+
+    #modalPoema .modal-caixa {
+        width: 94vw;
+
+        max-height: 90vh;
+
+        padding: 25px 20px;
+    }
+
+    #modalPoema h2 {
+        font-size: 35px !important;
+    }
+
+    #modalPoema .analise-poema h3 {
+        font-size: 23px !important;
+    }
+
+    #modalPoema .aviso-poema strong {
+        font-size: 22px !important;
+    }
+
+    #modalPoema .subtitulo-poema,
+    #modalPoema .aviso-poema p,
+    #modalPoema .analise-poema p {
+        font-size: 16px !important;
+    }
+
+}
+/* ==================================
+   QUIZ INTERATIVO
+================================== */
+
+.quiz-secao {
+    background:
+        linear-gradient(
+            135deg,
+            #f7f2eb,
+            #ebe0d2
+        );
+
+    text-align: center;
+}
+
+
+.quiz-introducao {
+    max-width: 720px;
+
+    margin:
+        0 auto 35px;
+
+    color:
+        #5d5147;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+}
+
+
+.quiz-caixa {
+    width: min(
+        850px,
+        100%
+    );
+
+    margin: auto;
+
+    padding: 40px;
+
+    box-sizing:
+        border-box;
+
+    border:
+        1px solid
+        #d9c7b3;
+
+    border-radius: 22px;
+
+    background:
+        #ffffff;
+
+    box-shadow:
+        0 18px 45px
+        rgba(
+            70,
+            45,
+            25,
+            0.12
+        );
+
+    text-align: left;
+}
+
+
+.quiz-topo {
+    display: flex;
+
+    justify-content:
+        space-between;
+
+    gap: 20px;
+
+    color:
+        #765536;
+
+    font-weight: 800;
+}
+
+
+.barra-progresso {
+    width: 100%;
+
+    height: 10px;
+
+    margin:
+        18px 0 35px;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    background:
+        #eadfd3;
+}
+
+
+#progressoBarra {
+    width: 12.5%;
+
+    height: 100%;
+
+    border-radius: 20px;
+
+    background:
+        #b88958;
+
+    transition:
+        width 0.4s;
+}
+
+
+#perguntaQuiz {
+    margin-bottom: 28px;
+
+    color:
+        #3f3026;
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 30px;
+
+    line-height: 1.35;
+}
+
+
+.respostas-quiz {
+    display: grid;
+
+    grid-template-columns:
+        1fr;
+
+    gap: 14px;
+}
+
+
+.resposta-quiz {
+    width: 100%;
+
+    padding:
+        18px 20px;
+
+    border:
+        2px solid
+        #dfd1c3;
+
+    border-radius: 12px;
+
+    background:
+        #faf7f3;
+
+    color:
+        #44372e;
+
+    font-size: 17px;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    transition:
+        0.25s;
+}
+
+
+.resposta-quiz:hover {
+    transform:
+        translateX(5px);
+
+    border-color:
+        #b88958;
+
+    background:
+        #f3e8da;
+}
+
+
+.resposta-quiz.correta {
+    border-color:
+        #3f8a5b;
+
+    background:
+        #dff2e5;
+}
+
+
+.resposta-quiz.errada {
+    border-color:
+        #b84d4d;
+
+    background:
+        #f7dddd;
+}
+
+
+.resposta-quiz:disabled {
+    cursor:
+        default;
+}
+
+
+.botao-proxima {
+    margin-top: 28px;
+
+    padding:
+        15px 28px;
+
+    border: none;
+
+    border-radius: 50px;
+
+    background:
+        #49382c;
+
+    color:
+        #ffffff;
+
+    font-size: 16px;
+
+    font-weight: 800;
+
+    cursor: pointer;
+
+    transition:
+        0.3s;
+}
+
+
+.botao-proxima:hover:not(
+    :disabled
+) {
+    transform:
+        translateY(-3px);
+
+    background:
+        #b88958;
+}
+
+
+.botao-proxima:disabled {
+    opacity: 0.45;
+
+    cursor:
+        not-allowed;
+}
+
+
+@media (
+    max-width: 650px
+) {
+
+    .quiz-caixa {
+        padding:
+            25px 18px;
+    }
+
+    .quiz-topo {
+        flex-direction:
+            column;
+
+        gap: 8px;
+    }
+
+    #perguntaQuiz {
+        font-size: 25px;
+    }
+
+}
+/* ==================================
+LINHA DO TEMPO
+================================== */
+
+.linha-tempo {
+    position: relative;
+
+    max-width: 900px;
+
+    margin:
+        50px auto 0;
+
+    padding-left: 40px;
+
+    border-left:
+        4px solid #b88958;
+}
+
+
+.evento-tempo {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns:
+        120px 1fr;
+
+    gap: 25px;
+
+    margin-bottom: 35px;
+}
+
+
+.evento-tempo::before {
+    content: "";
+
+    position: absolute;
+
+    left: -52px;
+
+    top: 8px;
+
+    width: 20px;
+
+    height: 20px;
+
+    border:
+        5px solid #f8f3ed;
+
+    border-radius: 50%;
+
+    background:
+        #b88958;
+}
+
+
+.ano {
+    color:
+        #8a6039;
+
+    font-size: 30px;
+
+    font-weight: 900;
+}
+
+
+.evento-conteudo {
+    padding:
+        25px;
+
+    border:
+        1px solid #e1d3c4;
+
+    border-radius: 15px;
+
+    background:
+        #ffffff;
+
+    box-shadow:
+        0 8px 20px
+        rgba(
+            60,
+            40,
+            20,
+            0.07
+        );
+}
+
+
+.evento-conteudo h3 {
+    margin-top: 0;
+
+    color:
+        #49382c;
+
+    font-size: 24px;
+}
+
+
+/* ==================================
+CURIOSIDADES
+================================== */
+
+.curiosidades-secao {
+    background:
+        #f5eee6;
+}
+
+
+.curiosidades-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            3,
+            1fr
+        );
+
+    gap: 22px;
+
+    margin-top: 40px;
+}
+
+
+.curiosidade {
+    padding:
+        30px 25px;
+
+    border-radius: 18px;
+
+    background:
+        #ffffff;
+
+    text-align: center;
+
+    transition:
+        0.3s;
+}
+
+
+.curiosidade:hover {
+    transform:
+        translateY(-7px);
+
+    box-shadow:
+        0 15px 30px
+        rgba(
+            50,
+            30,
+            20,
+            0.12
+        );
+}
+
+
+.icone {
+    font-size: 45px;
+}
+
+
+.curiosidade h3 {
+    color:
+        #49382c;
+}
+
+
+/* ==================================
+TEMAS
+================================== */
+
+.temas-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            3,
+            1fr
+        );
+
+    gap: 22px;
+
+    margin-top: 40px;
+}
+
+
+.tema {
+    padding:
+        30px;
+
+    border:
+        1px solid #dfd1c3;
+
+    border-radius: 18px;
+
+    background:
+        #ffffff;
+
+    text-align: center;
+}
+
+
+.tema span {
+    font-size: 45px;
+}
+
+
+.tema h3 {
+    color:
+        #49382c;
+}
+
+
+/* ==================================
+ESCRITA
+================================== */
+
+.escrita-secao {
+    background:
+        #49382c;
+
+    color:
+        #ffffff;
+}
+
+
+.escrita-secao h2 {
+    color:
+        #ffffff;
+}
+
+
+.texto-escrita {
+    max-width: 950px;
+
+    margin: auto;
+}
+
+
+.texto-escrita > p {
+    color:
+        #eee4da;
+
+    font-size: 19px;
+
+    line-height: 1.9;
+}
+
+
+.lista-caracteristicas {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            2,
+            1fr
+        );
+
+    gap: 15px;
+
+    margin-top: 35px;
+}
+
+
+.lista-caracteristicas div {
+    padding:
+        18px;
+
+    border:
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            0.2
+        );
+
+    border-radius: 10px;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.07
+        );
+}
+
+
+/* ==================================
+CONCLUSÃO
+================================== */
+
+.conclusao-secao {
+    background:
+        linear-gradient(
+            135deg,
+            #eadbc8,
+            #f8f3ed
+        );
+
+    text-align: center;
+}
+
+
+.conclusao-caixa {
+    max-width: 900px;
+
+    margin: 40px auto 0;
+
+    padding:
+        50px;
+
+    border-radius: 25px;
+
+    background:
+        #ffffff;
+
+    box-shadow:
+        0 18px 40px
+        rgba(
+            60,
+            40,
+            20,
+            0.1
+        );
+}
+
+
+.conclusao-caixa span {
+    display: block;
+
+    margin-bottom: 30px;
+
+    color:
+        #8a6039;
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 30px;
+}
+
+
+/* ==================================
+FONTES
+================================== */
+
+.fontes-caixa {
+    max-width: 850px;
+
+    margin: 35px auto 0;
+
+    padding:
+        35px;
+
+    border-left:
+        6px solid #b88958;
+
+    background:
+        #f5eee6;
+}
+
+
+.fontes-caixa li {
+    margin:
+        14px 0;
+
+    line-height: 1.7;
+}
+
+
+/* ==================================
+RESPONSIVIDADE
+================================== */
+
+@media (
+    max-width: 850px
+) {
+
+    .curiosidades-grid,
+    .temas-grid {
+        grid-template-columns:
+            repeat(
+                2,
+                1fr
+            );
+    }
+
+}
+
+
+@media (
+    max-width: 650px
+) {
+
+    .evento-tempo {
+        grid-template-columns:
+            1fr;
+
+        gap: 10px;
+    }
+
+    .linha-tempo {
+        padding-left: 25px;
+    }
+
+    .evento-tempo::before {
+        left: -38px;
+    }
+
+    .curiosidades-grid,
+    .temas-grid,
+    .lista-caracteristicas {
+        grid-template-columns:
+            1fr;
+    }
+
+    .conclusao-caixa {
+        padding:
+            30px 20px;
+    }
+
+    .conclusao-caixa span {
+        font-size: 25px;
+    }
+
+}
+/* ==================================
+RODAPÉ
+================================== */
+
+.rodape {
+    padding:
+        65px 20px;
+
+    background:
+        #211813;
+
+    color:
+        #e9ddd1;
+
+    text-align: center;
+}
+
+
+.rodape-conteudo {
+    max-width: 750px;
+
+    margin: auto;
+}
+
+
+.rodape h2 {
+    color:
+        #d8ad76;
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 35px;
+}
+
+
+.rodape p {
+    color:
+        #d9cec4;
+
+    line-height: 1.8;
+}
+
+
+.rodape-linha {
+    width: 100px;
+
+    height: 2px;
+
+    margin:
+        30px auto;
+
+    background:
+        #b88958;
+}
+
+
+.rodape small {
+    color:
+        #a99a8d;
+}
+/* ==================================
+   ANIMAÇÕES E EFEITOS
+================================== */
+
+.cartao,
+.obra,
+.curiosidade,
+.tema,
+.item-glossario,
+.evento-conteudo,
+.conclusao-caixa {
+    transition: all 0.35s ease;
+}
+
+.cartao:hover,
+.obra:hover,
+.curiosidade:hover,
+.tema:hover,
+.item-glossario:hover,
+.evento-conteudo:hover,
+.conclusao-caixa:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 35px rgba(0,0,0,.18);
+}
+h2{
+    position: relative;
+    display: inline-block;
+}
+
+h2::after{
+    content:"";
+    display:block;
+    width:70px;
+    height:4px;
+    background:var(--dourado);
+    border-radius:20px;
+    margin-top:12px;
+}
+/* ==================================
+   SCROLL REVEAL
+================================== */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(70px);
+    transition: opacity .8s ease, transform .8s ease;
+}
+
+.reveal.ativo {
+    opacity: 1;
+    transform: translateY(0);
+}
+.biografia-container{
+    display:flex;
+    align-items:center;
+    gap:40px;
+}
+
+.biografia-container img{
+    width:320px;
+    border-radius:18px;
+    box-shadow:0 15px 35px rgba(0,0,0,.18);
+    transition:.4s;
+}
+
+.biografia-container img:hover{
+    transform:scale(1.03);
+}
